@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>4shoyulz Cart | Track Your Orders</title>
+
+    <meta name="theme-color" content="#111111">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+
+    <div id="loading">
+
+        <div class="loader"></div>
+
+        <p>Loading...</p>
+
+    </div>
+
+    <!-- Main -->
+
+    <main class="container">
+
+        <!-- Logo -->
+
+        <header>
+
+    <span class="mini-title">
+        ✦ 4SHOYULZ CART ✦
+    </span>
+
+    <h1>
+        Track Your Orders
+    </h1>
+
+    <p class="subtitle">
+        Fast • Secure • Updated Daily
+    </p>
+
+        </header>
+
+        <!-- Search -->
+
+        <section class="search-box">
+
+    <label>
+
+        Telegram Username
+
+    </label>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="@yourusername"
+        autocomplete="off"
+    >
+
+    <button id="searchBtn">
+
+        🔍 Track Order
+
+    </button>
+
+    <small>
+
+        Order updates are refreshed whenever the admin updates them.
+
+    </small>
+
+        </section>
+
+        <!-- Result -->
+
+        <section id="results" class="hidden">
+
+            <div class="result-header">
+
+                <h2 id="buyerName">
+
+                    Orders
+
+                </h2>
+
+                <p id="orderCount">
+
+                    0 Orders Found
+
+                </p>
+
+            </div>
+
+            <div id="ordersContainer">
+
+                <!-- JavaScript inserts cards here -->
+
+            </div>
+
+        </section>
+
+        <!-- Empty -->
+
+        <section id="empty" class="hidden">
+
+            <div class="empty-card">
+
+                <h2>
+
+                    No Orders Found
+
+                </h2>
+
+                <p>
+
+                    Please check your Telegram username and try again.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+    <p>
+
+        Made with ♡
+
+    </p>
+
+    <span>
+
+        by 4shoyulz Cart
+
+    </span>
+
+    </footer>
+
+    <!-- Template Card -->
+
+    <template id="orderTemplate">
+
+<div class="order-card">
+
+    <div class="card-top">
+
+        <span class="tag"></span>
+
+        <span class="quantity"></span>
+
+    </div>
+
+    <h2 class="item"></h2>
+
+    <div class="status-badge status"></div>
+
+    <div class="tracker">
+
+        <div class="step">
+            <div class="circle">🤍</div>
+            <span>Secured</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">🚚</div>
+            <span>Warehouse</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">📦</div>
+            <span>Arrived</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">🚛</div>
+            <span>To Admin</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">🏠</div>
+            <span>Admin</span>
+        </div>
+
+    </div>
+
+    <div class="updated">
+
+        Updated
+
+        <span></span>
+
+    </div>
+
+</div>
+
+    </template>
+    
+    <!-- JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
