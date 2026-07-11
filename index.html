@@ -160,61 +160,69 @@
 
     <template id="orderTemplate">
 
-        <div class="order-card">
+<div class="order-card">
 
-            <div class="tag">
+    <div class="card-top">
 
-                #TAG
+        <span class="tag"></span>
 
-            </div>
+        <span class="quantity"></span>
 
-            <div class="item">
+    </div>
 
-                Item Name
+    <h2 class="item"></h2>
 
-            </div>
+    <div class="status-badge status"></div>
 
-            <div class="quantity">
+    <div class="tracker">
 
-                Quantity
-
-                <span>x1</span>
-
-            </div>
-
-            <div class="status">
-
-                Status
-
-            </div>
-
-            <div class="progress">
-
-                <div class="progress-bar">
-
-                    <div class="progress-fill"></div>
-
-                </div>
-
-                <span class="progress-text">
-
-                    20%
-
-                </span>
-
-            </div>
-
-            <div class="updated">
-
-                Last Updated:
-                <span>11 Jul 2026</span>
-
-            </div>
-
+        <div class="step">
+            <div class="circle">🤍</div>
+            <span>Secured</span>
         </div>
 
-    </template>
+        <div class="line"></div>
 
+        <div class="step">
+            <div class="circle">🚚</div>
+            <span>Warehouse</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">📦</div>
+            <span>Arrived</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">🚛</div>
+            <span>To Admin</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">🏠</div>
+            <span>Admin</span>
+        </div>
+
+    </div>
+
+    <div class="updated">
+
+        Updated
+
+        <span></span>
+
+    </div>
+
+</div>
+
+    </template>
+    
     <!-- JS -->
 
     <script src="script.js"></script>
