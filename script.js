@@ -54,7 +54,23 @@ fetch("orders.json")
 // Search Button
 // --------------------
 
-searchBtn.addEventListener("click", searchOrders);
+searchBtn.addEventListener("click", () => {
+
+    searchBtn.disabled = true;
+
+    searchBtn.innerHTML = "Searching...";
+
+    setTimeout(() => {
+
+        searchOrders();
+
+        searchBtn.disabled = false;
+
+        searchBtn.innerHTML = "Track Order →";
+
+    },600);
+
+});
 
 searchInput.addEventListener("keypress", function(e){
 
@@ -105,11 +121,17 @@ function searchOrders(){
     buyerName.textContent = `Orders for ${username}`;
     orderCount.textContent = `${filtered.length} Order(s) Found`;
 
-    filtered.forEach(order => {
+    filtered.forEach(order=>{
 
-        createCard(order);
+    createCard(order);
 
-    });
+});
+
+results.scrollIntoView({
+
+    behavior:"smooth"
+
+});
 
 }
 
