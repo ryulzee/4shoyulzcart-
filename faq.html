@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ | 4SHOYULZ CART</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        ✦ 4SHOYULZ CART
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="track.html">Track</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+</nav>
+
+<section class="faq-section">
+
+<h1>Frequently Asked Questions</h1>
+
+<div class="faq">
+
+<button class="faq-question">
+
+How do I track my order?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Search using the same Telegram username you used when placing your order.
+
+</div>
+
+</div>
+
+<div class="faq">
+
+<button class="faq-question">
+
+Why can't I find my order?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Please check that you've entered the correct Telegram username. If you still can't find your order, contact our Telegram.
+
+</div>
+
+</div>
+
+<div class="faq">
+
+<button class="faq-question">
+
+How often is the tracker updated?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+The tracker is updated whenever there is a new progress from the supplier or warehouse.
+
+</div>
+
+</div>
+
+<div class="faq">
+
+<button class="faq-question">
+
+My Telegram username changed.
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Please contact us and let us know your old and new Telegram usernames so we can update our records.
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+document.querySelectorAll(".faq-question").forEach(button=>{
+
+button.onclick=()=>{
+
+button.classList.toggle("open");
+
+const answer=button.nextElementSibling;
+
+answer.style.maxHeight=answer.style.maxHeight?
+
+null:
+
+answer.scrollHeight+"px";
+
+}
+
+});
+
+</script>
+
+</body>
+
+</html>
