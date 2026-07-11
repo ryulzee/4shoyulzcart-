@@ -148,6 +148,68 @@ color:var(--sub);
 
 }
 
+.mini-title{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:rgba(217,108,151,.15);
+
+border:1px solid rgba(217,108,151,.35);
+
+border-radius:30px;
+
+font-size:13px;
+
+letter-spacing:2px;
+
+color:#f4b6cc;
+
+margin-bottom:20px;
+
+}
+
+.subtitle{
+
+margin-top:12px;
+
+color:#b3b3b3;
+
+font-size:15px;
+
+}
+
+.search-box label{
+
+display:block;
+
+margin-bottom:12px;
+
+font-size:14px;
+
+font-weight:600;
+
+color:#f0f0f0;
+
+}
+
+.search-box small{
+
+display:block;
+
+margin-top:15px;
+
+color:#8d8d8d;
+
+font-size:12px;
+
+text-align:center;
+
+line-height:20px;
+
+}
+
 /* Search */
 
 .search-box{
