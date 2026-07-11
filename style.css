@@ -755,3 +755,45 @@ margin-top:20px;
 border-radius:20px;
 
 }
+
+.circle.active{
+
+background:#d67a9a;
+
+box-shadow:0 0 18px rgba(214,122,154,.45);
+
+transform:scale(1.05);
+
+}
+
+.line.active{
+
+background:#d67a9a;
+
+}
+
+.order-card{
+
+animation:fadeUp .45s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
