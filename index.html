@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>4shoyulz Cart | Track Your Orders</title>
+
+    <meta name="theme-color" content="#111111">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+
+    <div id="loading">
+
+        <div class="loader"></div>
+
+        <p>Loading...</p>
+
+    </div>
+
+    <!-- Main -->
+
+    <main class="container">
+
+        <!-- Logo -->
+
+        <header>
+
+            <h1>4shoyulz Cart</h1>
+
+            <p>Track Your Orders ♡</p>
+
+        </header>
+
+        <!-- Search -->
+
+        <section class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Enter your Telegram username"
+                autocomplete="off"
+            >
+
+            <button id="searchBtn">
+
+                Track Order
+
+            </button>
+
+        </section>
+
+        <!-- Result -->
+
+        <section id="results" class="hidden">
+
+            <div class="result-header">
+
+                <h2 id="buyerName">
+
+                    Orders
+
+                </h2>
+
+                <p id="orderCount">
+
+                    0 Orders Found
+
+                </p>
+
+            </div>
+
+            <div id="ordersContainer">
+
+                <!-- JavaScript inserts cards here -->
+
+            </div>
+
+        </section>
+
+        <!-- Empty -->
+
+        <section id="empty" class="hidden">
+
+            <div class="empty-card">
+
+                <h2>
+
+                    No Orders Found
+
+                </h2>
+
+                <p>
+
+                    Please check your Telegram username and try again.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 4shoyulz Cart
+
+    </footer>
+
+    <!-- Template Card -->
+
+    <template id="orderTemplate">
+
+        <div class="order-card">
+
+            <div class="tag">
+
+                #TAG
+
+            </div>
+
+            <div class="item">
+
+                Item Name
+
+            </div>
+
+            <div class="quantity">
+
+                Quantity
+
+                <span>x1</span>
+
+            </div>
+
+            <div class="status">
+
+                Status
+
+            </div>
+
+            <div class="progress">
+
+                <div class="progress-bar">
+
+                    <div class="progress-fill"></div>
+
+                </div>
+
+                <span class="progress-text">
+
+                    20%
+
+                </span>
+
+            </div>
+
+            <div class="updated">
+
+                Last Updated:
+                <span>11 Jul 2026</span>
+
+            </div>
+
+        </div>
+
+    </template>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
