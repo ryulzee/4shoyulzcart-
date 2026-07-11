@@ -125,8 +125,8 @@ function createCard(order){
 
     clone.querySelector(".item").textContent = order.item;
 
-    clone.querySelector(".quantity span").textContent =
-        "x" + order.quantity;
+    clone.querySelector(".quantity").textContent =
+        "Qty ×" + order.quantity;
 
     const badge = clone.querySelector(".status");
 
@@ -134,17 +134,41 @@ function createCard(order){
 
     badge.style.background = getBadge(order.status);
 
-    const progressFill = clone.querySelector(".progress-fill");
-    const progressText = clone.querySelector(".progress-text");
-
-    const percent = getProgress(order.status);
-
-    progressFill.style.width = percent + "%";
-
-    progressText.textContent = percent + "%";
-
     clone.querySelector(".updated span").textContent =
         order.updated;
+
+    const steps = clone.querySelectorAll(".circle");
+    const lines = clone.querySelectorAll(".line");
+
+    const statusMap = {
+        "Secured":0,
+        "OTW to Warehouse":1,
+        "Arrived at Warehouse":2,
+        "OTW to Admin":3,
+        "Arrived at Admin":4
+    };
+
+    const current = statusMap[order.status];
+
+    steps.forEach((step,index)=>{
+
+        if(index<=current){
+
+            step.classList.add("active");
+
+        }
+
+    });
+
+    lines.forEach((line,index)=>{
+
+        if(index<current){
+
+            line.classList.add("active");
+
+        }
+
+    });
 
     ordersContainer.appendChild(clone);
 
