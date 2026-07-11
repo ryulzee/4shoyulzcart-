@@ -23,209 +23,92 @@
 
 <body>
 
-    <!-- Loading Screen -->
+<nav class="navbar">
 
-    <div id="loading">
+    <div class="logo">
+        ✦ 4SHOYULZ CART
+    </div>
 
-        <div class="loader"></div>
+    <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="track.html">Track</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
-        <p>Loading...</p>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-card">
+
+        <h1>Order Tracking</h1>
+
+        <p>
+            Easily track your purchases using your Telegram username.
+            Check your order status from secured to arrival — all in one place.
+        </p>
+
+        <a href="track.html" class="hero-btn">
+            Track My Orders →
+        </a>
 
     </div>
 
-    <!-- Main -->
+</section>
 
-    <main class="container">
+<section class="features">
 
-        <!-- Logo -->
+    <div class="feature-card">
 
-        <header>
+        <h3>📦 Order Tracking</h3>
 
-    <span class="mini-title">
-        ✦ 4SHOYULZ CART ✦
-    </span>
+        <p>
+            Search your Telegram username and instantly view all of your active orders.
+        </p>
 
-    <h1>
-        Track Your Orders
-    </h1>
+    </div>
 
-    <p class="subtitle">
-        Fast • Secure • Updated Daily
-    </p>
+    <div class="feature-card">
 
-        </header>
+        <h3>🚚 Order Status</h3>
 
-        <!-- Search -->
+        <p>
+            Stay updated with every step of your order, from secured to arrival.
+        </p>
 
-        <section class="search-box">
+    </div>
 
-    <label>
+    <div class="feature-card">
 
-        Telegram Username
+        <h3>📱 Mobile Friendly</h3>
 
-    </label>
+        <p>
+            Optimized for phones, tablets and desktop for quick access anywhere.
+        </p>
 
-    <input
-        type="text"
-        id="searchInput"
-        placeholder="@yourusername"
-        autocomplete="off"
-    >
+    </div>
 
-    <button id="searchBtn">
+</section>
 
-        🔍 Track Order
+<section class="about">
 
-    </button>
-
-    <small>
-
-        Order updates are refreshed whenever the admin updates them.
-
-    </small>
-
-        </section>
-
-        <!-- Result -->
-
-        <section id="results" class="hidden">
-
-            <div class="result-header">
-
-                <h2 id="buyerName">
-
-                    Orders
-
-                </h2>
-
-                <p id="orderCount">
-
-                    0 Orders Found
-
-                </p>
-
-            </div>
-
-            <div id="ordersContainer">
-
-                <!-- JavaScript inserts cards here -->
-
-            </div>
-
-        </section>
-
-        <!-- Empty -->
-
-        <section id="empty" class="hidden">
-
-            <div class="empty-card">
-
-                <h2>
-
-                    No Orders Found
-
-                </h2>
-
-                <p>
-
-                    Please check your Telegram username and try again.
-
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-
-    <footer>
+    <h2>About 4SHOYULZ CART</h2>
 
     <p>
 
-        Made with ♡
+        4SHOYULZ CART is a K-pop order tracking website designed to help buyers
+        easily check the latest status of their purchases using their Telegram username.
 
     </p>
 
-    <span>
+</section>
 
-        by 4shoyulz Cart
+<footer>
 
-    </span>
+    <p>© 2026 4SHOYULZ CART</p>
 
-    </footer>
-
-    <!-- Template Card -->
-
-    <template id="orderTemplate">
-
-<div class="order-card">
-
-    <div class="card-top">
-
-        <span class="tag"></span>
-
-        <span class="quantity"></span>
-
-    </div>
-
-    <h2 class="item"></h2>
-
-    <div class="status-badge status"></div>
-
-    <div class="tracker">
-
-        <div class="step">
-            <div class="circle">🤍</div>
-            <span>Secured</span>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="step">
-            <div class="circle">🚚</div>
-            <span>Warehouse</span>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="step">
-            <div class="circle">📦</div>
-            <span>Arrived</span>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="step">
-            <div class="circle">🚛</div>
-            <span>To Admin</span>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="step">
-            <div class="circle">🏠</div>
-            <span>Admin</span>
-        </div>
-
-    </div>
-
-    <div class="updated">
-
-        Updated
-
-        <span></span>
-
-    </div>
-
-</div>
-
-    </template>
-    
-    <!-- JS -->
-
-    <script src="script.js"></script>
+</footer>
 
 </body>
 
