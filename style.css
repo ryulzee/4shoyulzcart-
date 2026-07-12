@@ -2488,3 +2488,21 @@ margin:auto;
 line-height:1.8;
 
 }
+
+   .copy-tag{
+
+cursor:pointer;
+
+user-select:none;
+
+transition:.25s;
+
+}
+
+.copy-tag:hover{
+
+transform:translateY(-2px);
+
+filter:brightness(1.15);
+
+}
