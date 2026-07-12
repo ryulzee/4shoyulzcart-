@@ -1,37 +1,16 @@
 [
   {
-    "username": "@lee",
+    "username": "@eyzq_jk97",
     "item": "Heeseung PC",
     "tag": "#PCY01",
-    "quantity": 2,
-    "status": "OTW to Warehouse"
-  },
-  {
-    "username": "@lee",
-    "item": "Romance Untold Album",
-    "tag": "#ALB17",
     "quantity": 1,
-    "status": "Arrived at Warehouse"
+    "status": "Arrived at admin"
   },
   {
-    "username": "@minji",
-    "item": "Jungwon PC",
-    "tag": "#PCY08",
-    "quantity": 3,
-    "status": "Secured"
-  },
-  {
-    "username": "@sunoo",
-    "item": "Jake PC",
-    "tag": "#PCY14",
-    "quantity": 1,
-    "status": "OTW to Admin"
-  },
-  {
-    "username": "@jay",
-    "item": "Sunghoon Lucky Draw",
-    "tag": "#LD22",
+    "username": "@what_whoo",
+    "item": "Jakewon pc",
+    "tag": "#PCY01",
     "quantity": 2,
-    "status": "Arrived at Admin"
+    "status": "Arrived at admin"
   }
 ]
