@@ -151,6 +151,23 @@ function createCard(order){
     const clone = template.content.cloneNode(true);
 
     clone.querySelector(".tag").textContent = order.tag;
+    const tag = clone.querySelector(".tag");
+
+tag.addEventListener("click", () => {
+
+    navigator.clipboard.writeText(order.tag);
+
+    const oldText = tag.textContent;
+
+    tag.textContent = "✓ Copied!";
+
+    setTimeout(() => {
+
+        tag.textContent = oldText;
+
+    }, 1200);
+
+});
 
     clone.querySelector(".item").textContent = order.item;
 
