@@ -14,75 +14,45 @@
 
 <body>
 
-<div class="dashboard">
+<div class="admin-layout">
 
-    <header class="topbar">
+    <aside class="sidebar">
 
-        <div>
+        <h2>4SHOYULZ</h2>
 
-            <h1>4SHOYULZ CART</h1>
+        <nav>
 
-            <p>Admin Dashboard</p>
+            <button class="nav-btn active">
+                Dashboard
+            </button>
 
-        </div>
+            <button class="nav-btn">
+                Orders
+            </button>
+
+            <button class="nav-btn">
+                Notices
+            </button>
+
+            <button class="nav-btn">
+                Settings
+            </button>
+
+        </nav>
 
         <button id="logoutBtn">
             Logout
         </button>
 
-    </header>
+    </aside>
 
-    <section class="stats">
+    <main class="content">
 
-        <div class="stat-card">
+        <!-- Dashboard content goes here -->
 
-            <h2 id="totalOrders">0</h2>
-
-            <p>Total Orders</p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <h2 id="totalBuyers">0</h2>
-
-            <p>Buyers</p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <h2 id="completedOrders">0</h2>
-
-            <p>Completed</p>
-
-        </div>
-
-    </section>
-
-    <section class="actions">
-
-        <button id="addOrderBtn">
-            + Add Order
-        </button>
-
-    </section>
-
-    <section class="recent">
-
-        <h2>Recent Orders</h2>
-
-        <div id="recentOrders">
-
-            <p>No orders yet.</p>
-
-        </div>
-
-    </section>
+    </main>
 
 </div>
-
-<script src="dashboard.js"></script>
 
 </body>
 
