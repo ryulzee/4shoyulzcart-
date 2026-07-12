@@ -370,3 +370,17 @@ if(lastSearch){
     searchInput.value = "@" + lastSearch;
 
 }
+
+const clearBtn = document.getElementById("clearSearch");
+
+if(clearBtn){
+
+    clearBtn.addEventListener("click", () => {
+
+        localStorage.removeItem("lastSearch");
+
+        searchInput.value = "";
+
+    });
+
+}
