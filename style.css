@@ -2532,3 +2532,53 @@ transform:translateY(0);
 }
 
 }
+
+/* ==========================
+STATS CARD
+========================== */
+
+.stats-card{
+
+margin:25px 0 40px;
+
+padding:28px;
+
+border-radius:24px;
+
+background:linear-gradient(
+135deg,
+rgba(214,122,154,.16),
+rgba(255,255,255,.04)
+);
+
+border:1px solid rgba(214,122,154,.25);
+
+text-align:center;
+
+}
+
+.stats-number{
+
+font-size:56px;
+
+font-weight:800;
+
+line-height:1;
+
+margin-bottom:10px;
+
+color:#efb4c8;
+
+}
+
+.stats-text{
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+font-size:13px;
+
+color:#bcbcbc;
+
+}
