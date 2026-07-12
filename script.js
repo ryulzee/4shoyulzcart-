@@ -153,7 +153,7 @@ function createCard(order){
     clone.querySelector(".item").textContent = order.item;
 
     clone.querySelector(".quantity").textContent =
-        "Qty ×" + order.quantity;
+    order.quantity;
 
     const badge = clone.querySelector(".status");
 
