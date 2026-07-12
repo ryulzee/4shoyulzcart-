@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard • 4SHOYULZ CART</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="login-card">
+
+        <h1>Dashboard</h1>
+
+        <p>Welcome back, Admin 🤍</p>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+if(sessionStorage.getItem("adminLoggedIn") !== "true"){
+
+    window.location.href = "admin.html";
+
+}
+
+document.getElementById("logoutBtn").addEventListener("click",()=>{
+
+    sessionStorage.removeItem("adminLoggedIn");
+
+    window.location.href="admin.html";
+
+});
+
+</script>
+
+</body>
+
+</html>
