@@ -123,8 +123,10 @@ function searchOrders(){
     empty.classList.add("hidden");
     results.classList.remove("hidden");
 
-    buyerName.textContent = `Orders for ${username}`;
-    orderCount.textContent = `${filtered.length} Order(s) Found`;
+    buyerName.textContent = `@${username}`;
+
+orderCount.textContent =
+    `✨ ${filtered.length} Active ${filtered.length > 1 ? "Orders" : "Order"}`;
 
     filtered.forEach(order=>{
 
