@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Orders • 4SHOYULZ CART</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<div class="admin-layout">
+
+    <aside class="sidebar">
+
+        <h2>4SHOYULZ</h2>
+
+        <nav>
+
+            <button class="nav-btn" onclick="location.href='dashboard.html'">
+                Dashboard
+            </button>
+
+            <button class="nav-btn active">
+                Orders
+            </button>
+
+            <button class="nav-btn" onclick="location.href='notices.html'">
+                Notices
+            </button>
+
+            <button class="nav-btn" onclick="location.href='settings.html'">
+                Settings
+            </button>
+
+        </nav>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="page-header">
+
+            <h1>Orders</h1>
+
+            <button id="addOrderBtn">
+                + Add Order
+            </button>
+
+        </div>
+
+        <div class="search-bar">
+
+            <input
+                type="text"
+                id="searchOrder"
+                placeholder="Search username, tag or item..."
+            >
+
+        </div>
+
+        <div id="ordersList">
+
+            <p>No orders loaded.</p>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="orders.js"></script>
+
+</body>
+
+</html>
