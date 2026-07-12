@@ -14,39 +14,75 @@
 
 <body>
 
-<div class="login-container">
+<div class="dashboard">
 
-    <div class="login-card">
+    <header class="topbar">
 
-        <h1>Dashboard</h1>
+        <div>
 
-        <p>Welcome back, Admin 🤍</p>
+            <h1>4SHOYULZ CART</h1>
+
+            <p>Admin Dashboard</p>
+
+        </div>
 
         <button id="logoutBtn">
             Logout
         </button>
 
-    </div>
+    </header>
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <h2 id="totalOrders">0</h2>
+
+            <p>Total Orders</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="totalBuyers">0</h2>
+
+            <p>Buyers</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="completedOrders">0</h2>
+
+            <p>Completed</p>
+
+        </div>
+
+    </section>
+
+    <section class="actions">
+
+        <button id="addOrderBtn">
+            + Add Order
+        </button>
+
+    </section>
+
+    <section class="recent">
+
+        <h2>Recent Orders</h2>
+
+        <div id="recentOrders">
+
+            <p>No orders yet.</p>
+
+        </div>
+
+    </section>
 
 </div>
 
-<script>
-
-if(sessionStorage.getItem("adminLoggedIn") !== "true"){
-
-    window.location.href = "admin.html";
-
-}
-
-document.getElementById("logoutBtn").addEventListener("click",()=>{
-
-    sessionStorage.removeItem("adminLoggedIn");
-
-    window.location.href="admin.html";
-
-});
-
-</script>
+<script src="dashboard.js"></script>
 
 </body>
 
