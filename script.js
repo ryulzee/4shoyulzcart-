@@ -332,3 +332,27 @@ function getBadge(status){
     }
 
 }
+
+// --------------------
+// Latest Notice
+// --------------------
+
+fetch("notices.json")
+.then(response => response.json())
+.then(data => {
+
+    const latest = data[0];
+
+    const title = document.getElementById("noticeTitle");
+    const message = document.getElementById("noticeMessage");
+    const date = document.getElementById("noticeDate");
+
+    if(title && message && date){
+
+        title.textContent = latest.title;
+        message.textContent = latest.message;
+        date.textContent = "Updated • " + latest.date;
+
+    }
+
+});
