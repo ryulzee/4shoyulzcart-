@@ -957,49 +957,59 @@ HERO
 
 .hero{
 
-padding:70px 20px;
-
-display:flex;
-
-justify-content:center;
-
-}
-
-.hero-card{
-
-max-width:700px;
-
-width:100%;
-
-background:#181818;
-
-border:1px solid #2a2a2a;
-
-border-radius:28px;
-
-padding:45px 35px;
+padding:90px 25px 70px;
 
 text-align:center;
 
-box-shadow:0 20px 50px rgba(0,0,0,.35);
+max-width:700px;
+
+margin:auto;
 
 }
 
-.hero-card h1{
+.hero-badge{
 
-font-size:42px;
+display:inline-block;
 
-margin-bottom:18px;
+padding:12px 26px;
+
+border-radius:999px;
+
+background:rgba(214,122,154,.12);
+
+border:1px solid rgba(214,122,154,.35);
+
+color:#efb4c8;
+
+letter-spacing:4px;
+
+font-size:13px;
+
+margin-bottom:30px;
 
 }
 
-.hero-card p{
+.hero h1{
 
-color:#b7b7b7;
+font-size:56px;
+
+margin-bottom:20px;
+
+line-height:1.1;
+
+}
+
+.hero p{
+
+max-width:550px;
+
+margin:0 auto 35px;
+
+color:#b9b9b9;
+
+font-size:18px;
 
 line-height:1.8;
-
-margin-bottom:35px;
 
 }
 
@@ -1007,27 +1017,29 @@ margin-bottom:35px;
 
 display:inline-block;
 
-padding:16px 34px;
+padding:18px 42px;
+
+border-radius:999px;
 
 background:#d67a9a;
 
 color:white;
 
-border-radius:40px;
+font-weight:700;
 
 text-decoration:none;
 
-font-weight:600;
-
 transition:.3s;
+
+box-shadow:0 15px 40px rgba(214,122,154,.25);
 
 }
 
 .hero-btn:hover{
 
-transform:translateY(-3px);
+transform:translateY(-5px);
 
-box-shadow:0 10px 30px rgba(214,122,154,.35);
+box-shadow:0 25px 60px rgba(214,122,154,.35);
 
 }
 
