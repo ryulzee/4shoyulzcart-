@@ -92,6 +92,8 @@ function searchOrders(){
     .trim()
     .toLowerCase()
     .replace(/^@/, "");
+    
+    localStorage.setItem("lastSearch", username);
 
     if(username === ""){
 
@@ -356,3 +358,15 @@ fetch("notices.json")
     }
 
 });
+
+// --------------------
+// Last Search
+// --------------------
+
+const lastSearch = localStorage.getItem("lastSearch");
+
+if(lastSearch){
+
+    searchInput.value = "@" + lastSearch;
+
+}
