@@ -8,7 +8,7 @@ const passwordInput = document.getElementById("password");
 const error = document.getElementById("error");
 
 // Change this later!
-const ADMIN_PASSWORD = "4shoyulz";
+const ADMIN_PASSWORD = "ryulyulrulnyul";
 
 loginBtn.addEventListener("click", login);
 
