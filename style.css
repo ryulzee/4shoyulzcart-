@@ -1568,3 +1568,119 @@ transform:translateY(-3px);
 box-shadow:0 10px 25px rgba(214,122,154,.35);
 
 }
+
+/* ==========================
+MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+
+gap:15px;
+
+padding:18px;
+
+}
+
+.logo{
+
+font-size:16px;
+
+text-align:center;
+
+}
+
+.nav-links{
+
+gap:18px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero-card{
+
+padding:30px 22px;
+
+}
+
+.hero-card h1{
+
+font-size:30px;
+
+}
+
+.hero-card p{
+
+font-size:15px;
+
+}
+
+.features{
+
+grid-template-columns:1fr;
+
+padding:30px 20px 60px;
+
+}
+
+.feature-card{
+
+padding:22px;
+
+}
+
+.contact-section h1,
+
+.faq-section h1{
+
+font-size:30px;
+
+}
+
+.order-card{
+
+padding:18px;
+
+}
+
+.item{
+
+font-size:19px;
+
+}
+
+.tracker{
+
+gap:4px;
+
+}
+
+.step span{
+
+font-size:9px;
+
+}
+
+.circle{
+
+width:34px;
+
+height:34px;
+
+font-size:15px;
+
+}
+
+.line{
+
+margin-top:17px;
+
+}
+
+}
