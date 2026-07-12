@@ -127,7 +127,7 @@ function searchOrders(){
 
 orderCount.textContent =
     `✨ ${filtered.length} Active ${filtered.length > 1 ? "Orders" : "Order"}`;
-
+document.getElementById("statsNumber").textContent = filtered.length;
     filtered.forEach(order=>{
 
     createCard(order);
