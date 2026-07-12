@@ -1755,7 +1755,11 @@ font-size:15px;
 
 .line{
 
-   body{
+margin-top:17px;
+
+}
+
+body{
 
 animation:pageFade .7s ease;
 
@@ -1766,7 +1770,6 @@ animation:pageFade .7s ease;
 from{
 
 opacity:0;
-
 transform:translateY(12px);
 
 }
@@ -1774,13 +1777,7 @@ transform:translateY(12px);
 to{
 
 opacity:1;
-
 transform:translateY(0);
-
-}
-
-}
-margin-top:17px;
 
 }
 
