@@ -180,6 +180,11 @@ tag.addEventListener("click", () => {
 
     badge.style.background = getBadge(order.status);
 
+badge.style.color = "#fff";
+
+badge.style.boxShadow =
+`0 8px 20px ${getBadge(order.status)}55`;
+
     clone.querySelector(".updated span").textContent =
         order.updated;
 
