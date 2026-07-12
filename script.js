@@ -88,7 +88,10 @@ searchInput.addEventListener("keypress", function(e){
 
 function searchOrders(){
 
-    const username = searchInput.value.trim().toLowerCase();
+    const username = searchInput.value
+    .trim()
+    .toLowerCase()
+    .replace(/^@/, "");
 
     if(username === ""){
 
@@ -100,7 +103,9 @@ function searchOrders(){
 
     const filtered = orders.filter(order =>
 
-        order.username.toLowerCase() === username
+        order.username
+    .toLowerCase()
+    .replace(/^@/, "") === username
 
     );
 
