@@ -26,27 +26,36 @@ fetch("orders.json")
 
     const list=document.getElementById("ordersList");
 
-    list.innerHTML="";
+    list.innerHTML += `
 
-    data.forEach(order=>{
+<div class="admin-order-card">
 
-        list.innerHTML += `
+    <h3>${order.item}</h3>
 
-        <div class="admin-order-card">
+    <p>👤 ${order.username}</p>
 
-            <h3>${order.item}</h3>
+    <p>🏷 ${order.tag}</p>
 
-            <p>${order.username}</p>
+    <p>📦 Qty ×${order.quantity}</p>
 
-            <p>${order.tag}</p>
+    <span class="status-pill">${order.status}</span>
 
-            <p>Qty: ${order.quantity}</p>
+    <p class="updated">
+        Updated • ${order.updated}
+    </p>
 
-            <span>${order.status}</span>
+    <div class="order-actions">
 
-        </div>
+        <button class="copyBtn"
+            data-order='${JSON.stringify(order)}'>
+            📋 Copy JSON
+        </button>
 
-        `;
+    </div>
+
+</div>
+
+`;
 
     });
 
