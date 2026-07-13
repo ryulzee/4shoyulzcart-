@@ -84,3 +84,39 @@ document.addEventListener("click",(e)=>{
     }
 
 });
+
+const modal = document.getElementById("orderModal");
+
+document.getElementById("addOrderBtn").onclick = () => {
+
+    modal.classList.remove("hidden");
+
+};
+
+document.getElementById("closeModal").onclick = () => {
+
+    modal.classList.add("hidden");
+
+};
+
+document.getElementById("generateBtn").onclick = () => {
+
+    const order = {
+
+        username: document.getElementById("newUsername").value,
+
+        item: document.getElementById("newItem").value,
+
+        tag: document.getElementById("newTag").value,
+
+        quantity: Number(document.getElementById("newQty").value),
+
+        status: document.getElementById("newStatus").value,
+
+        updated: document.getElementById("newUpdated").value
+
+    };
+
+    document.getElementById("generatedJson").value = JSON.stringify(order,null,4);
+
+};
