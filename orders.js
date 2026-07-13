@@ -24,6 +24,20 @@ fetch("orders.json")
 
 .then(data=>{
 
+    document.getElementById("totalCount").textContent = data.length;
+
+document.getElementById("securedCount").textContent =
+data.filter(o=>o.status==="Secured").length;
+
+document.getElementById("warehouseCount").textContent =
+data.filter(o=>o.status==="OTW to Warehouse").length;
+
+document.getElementById("arrivedCount").textContent =
+data.filter(o=>o.status==="Arrived at Warehouse").length;
+
+document.getElementById("adminCount").textContent =
+data.filter(o=>o.status==="Arrived at Admin").length;
+
     const list=document.getElementById("ordersList");
 
     list.innerHTML += `
