@@ -26,21 +26,23 @@ fetch("orders.json")
 
     document.getElementById("totalCount").textContent = data.length;
 
-document.getElementById("securedCount").textContent =
-data.filter(o=>o.status==="Secured").length;
+    document.getElementById("securedCount").textContent =
+    data.filter(o=>o.status==="Secured").length;
 
-document.getElementById("warehouseCount").textContent =
-data.filter(o=>o.status==="OTW to Warehouse").length;
+    document.getElementById("warehouseCount").textContent =
+    data.filter(o=>o.status==="OTW to Warehouse").length;
 
-document.getElementById("arrivedCount").textContent =
-data.filter(o=>o.status==="Arrived at Warehouse").length;
+    document.getElementById("arrivedCount").textContent =
+    data.filter(o=>o.status==="Arrived at Warehouse").length;
 
-document.getElementById("adminCount").textContent =
-data.filter(o=>o.status==="Arrived at Admin").length;
+    document.getElementById("adminCount").textContent =
+    data.filter(o=>o.status==="Arrived at Admin").length;
 
     const list=document.getElementById("ordersList");
 
-    list.innerHTML += `
+    list.innerHTML="";
+
+    data.forEach(order=>{
 
 <div class="admin-order-card">
 
