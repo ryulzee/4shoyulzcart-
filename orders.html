@@ -84,6 +84,80 @@
 
         </div>
 
+        <!-- Add Order Modal -->
+
+<div id="orderModal" class="modal hidden">
+
+    <div class="modal-card">
+
+        <h2>New Order</h2>
+
+        <input
+            id="newUsername"
+            placeholder="@username"
+        >
+
+        <input
+            id="newItem"
+            placeholder="Item"
+        >
+
+        <input
+            id="newTag"
+            placeholder="Tag"
+        >
+
+        <input
+            id="newQty"
+            type="number"
+            placeholder="Quantity"
+        >
+
+        <select id="newStatus">
+
+            <option>Secured</option>
+
+            <option>OTW to Warehouse</option>
+
+            <option>Arrived at Warehouse</option>
+
+            <option>OTW to Admin</option>
+
+            <option>Arrived at Admin</option>
+
+        </select>
+
+        <input
+            id="newUpdated"
+            placeholder="13 Jul 2026"
+        >
+
+        <div class="modal-buttons">
+
+            <button id="generateBtn">
+
+                Generate JSON
+
+            </button>
+
+            <button id="closeModal">
+
+                Cancel
+
+            </button>
+
+        </div>
+
+        <textarea
+            id="generatedJson"
+            rows="10"
+            readonly
+        ></textarea>
+
+    </div>
+
+</div>
+
         <div id="ordersList">
 
             <p>No orders loaded.</p>
