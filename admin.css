@@ -775,3 +775,59 @@ background:#333;
 color:white;
 
 }
+
+/* ==========================
+ORDER SUMMARY
+========================== */
+
+.order-summary{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+
+gap:15px;
+
+margin:25px 0;
+
+}
+
+.summary-card{
+
+background:#1b1b1b;
+
+border:1px solid #2d2d2d;
+
+border-radius:18px;
+
+padding:18px;
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.summary-card:hover{
+
+transform:translateY(-3px);
+
+}
+
+.summary-card h3{
+
+font-size:28px;
+
+color:#d67a9a;
+
+margin-bottom:8px;
+
+}
+
+.summary-card p{
+
+font-size:13px;
+
+color:#cfcfcf;
+
+}
