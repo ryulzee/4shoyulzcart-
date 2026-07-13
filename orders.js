@@ -191,9 +191,3 @@ document.getElementById("copyGenerated").onclick = ()=>{
     },1500);
 
 })
-
-.catch(error=>{
-
-    console.error("Failed to load orders:",error);
-
-});
