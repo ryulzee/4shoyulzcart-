@@ -87,6 +87,28 @@ document.addEventListener("click",(e)=>{
 
 const modal = document.getElementById("orderModal");
 
+function today(){
+
+    const options={
+
+        day:"numeric",
+
+        month:"short",
+
+        year:"numeric"
+
+    };
+
+    return new Date().toLocaleDateString(
+
+        "en-GB",
+
+        options
+
+    );
+
+}
+
 document.getElementById("addOrderBtn").onclick = () => {
 
     modal.classList.remove("hidden");
@@ -118,5 +140,31 @@ document.getElementById("generateBtn").onclick = () => {
     };
 
     document.getElementById("generatedJson").value = JSON.stringify(order,null,4);
+
+};
+
+document.getElementById("copyGenerated").onclick = ()=>{
+
+    const textarea = document.getElementById("generatedJson");
+
+    if(textarea.value===""){
+
+        alert("Generate JSON first.");
+
+        return;
+
+    }
+
+    navigator.clipboard.writeText(textarea.value);
+
+    const btn = document.getElementById("copyGenerated");
+
+    btn.textContent="✅ Copied!";
+
+    setTimeout(()=>{
+
+        btn.textContent="Copy";
+
+    },1500);
 
 };
