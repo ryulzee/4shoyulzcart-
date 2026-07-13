@@ -138,6 +138,12 @@ document.getElementById("addOrderBtn").onclick=()=>{
 
 };
 
+document.getElementById("closeModal").onclick = () => {
+
+    modal.classList.add("hidden");
+
+};
+
 document.getElementById("generateBtn").onclick = () => {
 
     const order = {
@@ -184,4 +190,10 @@ document.getElementById("copyGenerated").onclick = ()=>{
 
     },1500);
 
-};
+})
+
+.catch(error=>{
+
+    console.error("Failed to load orders:",error);
+
+});
