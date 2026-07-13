@@ -60,3 +60,27 @@ fetch("orders.json")
     });
 
 });
+
+document.addEventListener("click",(e)=>{
+
+    if(e.target.classList.contains("copyBtn")){
+
+        const order = JSON.parse(e.target.dataset.order);
+
+        navigator.clipboard.writeText(
+
+            JSON.stringify(order,null,4)
+
+        );
+
+        e.target.textContent = "✅ Copied!";
+
+        setTimeout(()=>{
+
+            e.target.textContent = "📋 Copy JSON";
+
+        },1500);
+
+    }
+
+});
