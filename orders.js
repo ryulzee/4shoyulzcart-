@@ -44,6 +44,8 @@ fetch("orders.json")
 
     data.forEach(order=>{
 
+        list.innerHTML += `
+
 <div class="admin-order-card">
 
     <h3>${order.item}</h3>
@@ -62,9 +64,12 @@ fetch("orders.json")
 
     <div class="order-actions">
 
-        <button class="copyBtn"
+        <button
+            class="copyBtn"
             data-order='${JSON.stringify(order)}'>
+
             📋 Copy JSON
+
         </button>
 
     </div>
@@ -124,12 +129,6 @@ function today(){
     );
 
 }
-
-document.getElementById("addOrderBtn").onclick = () => {
-
-    modal.classList.remove("hidden");
-
-};
 
 document.getElementById("addOrderBtn").onclick=()=>{
 
