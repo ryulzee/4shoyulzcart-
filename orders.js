@@ -115,9 +115,11 @@ document.getElementById("addOrderBtn").onclick = () => {
 
 };
 
-document.getElementById("closeModal").onclick = () => {
+document.getElementById("addOrderBtn").onclick=()=>{
 
-    modal.classList.add("hidden");
+    document.getElementById("newUpdated").value=today();
+
+    modal.classList.remove("hidden");
 
 };
 
