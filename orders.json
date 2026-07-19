@@ -2,15 +2,23 @@
   {
     "username": "@eyzq_jk97",
     "item": "Heeseung PC",
-    "tag": "#PCY01",
+    "tag": "#PA01",
     "quantity": 1,
-    "status": "Arrived at admin"
+    "status": "Completed"
   },
   {
     "username": "@what_whoo",
     "item": "Jakewon pc",
-    "tag": "#PCY01",
+    "tag": "#PA01",
     "quantity": 2,
-    "status": "Arrived at admin"
-  }
+    "status": "Completed"
+  },
+    {
+    "username": "password",
+    "item": "Keonho pc",
+    "tag": "#PCY01",
+    "quantity": 1,
+    "status": "Secured"
+  },
+  
 ]
