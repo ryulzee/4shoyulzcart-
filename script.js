@@ -195,12 +195,12 @@ badge.style.boxShadow =
 
     const statusMap = {
 
-    "Secured":0,
-    "OTW to Warehouse":1,
-    "Arrived at Warehouse":2,
-    "OTW to Admin":3,
-    "Arrived at Admin":4,
-    "Done":5
+    "Secured": 0,
+    "OTW to Warehouse": 1,
+    "Arrived at Warehouse": 2,
+    "OTW to Admin": 3,
+    "Arrived at Admin": 4,
+    "Completed": 5
 
 };
 
@@ -294,10 +294,10 @@ function getEmoji(status){
 
             return "🏠";
 
-        case "Done":
+        case "Completed":
 
             return "✅";
-
+            
         default:
 
             return "";
@@ -334,6 +334,10 @@ function getBadge(status){
 
             return "#206641";
 
+        case "Completed":
+
+            return "#2E8B57";
+            
         default:
 
             return "#444";
