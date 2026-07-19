@@ -38,6 +38,9 @@ fetch("orders.json")
     document.getElementById("adminCount").textContent =
     data.filter(o=>o.status==="Arrived at Admin").length;
 
+    document.getElementById("doneCount").textContent =
+    data.filter(o => o.status === "Done").length;
+
     const list=document.getElementById("ordersList");
 
     list.innerHTML="";
