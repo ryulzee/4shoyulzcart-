@@ -32,7 +32,7 @@ fetch("orders.json")
 
     const completed=data.filter(order=>order.status==="Arrived at Admin");
 
-    document.getElementById("completedOrders").textContent=completed.length;
+    const completed=data.filter(order=>order.status==="Completed");
 
     const recent=document.getElementById("recentOrders");
 
