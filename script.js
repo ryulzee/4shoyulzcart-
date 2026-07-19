@@ -194,12 +194,15 @@ badge.style.boxShadow =
     const lines = clone.querySelectorAll(".line");
 
     const statusMap = {
-        "Secured":0,
-        "OTW to Warehouse":1,
-        "Arrived at Warehouse":2,
-        "OTW to Admin":3,
-        "Arrived at Admin":4
-    };
+
+    "Secured":0,
+    "OTW to Warehouse":1,
+    "Arrived at Warehouse":2,
+    "OTW to Admin":3,
+    "Arrived at Admin":4,
+    "Done":5
+
+};
 
     const current = statusMap[order.status];
 
@@ -290,6 +293,10 @@ function getEmoji(status){
         case "Arrived at Admin":
 
             return "🏠";
+
+        case "Done":
+
+            return "✅";
 
         default:
 
