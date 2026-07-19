@@ -20,7 +20,15 @@ document.getElementById("logoutBtn").addEventListener("click",()=>{
 
 fetch("orders.json")
 
-.then(res=>res.json())
+.then(res=>{
+
+    if(!res.ok){
+        throw new Error("orders.json not found");
+    }
+
+    return res.json();
+
+})
 
 .then(data=>{
 
@@ -30,9 +38,9 @@ fetch("orders.json")
 
     document.getElementById("totalBuyers").textContent=buyers.size;
 
-    const completed=data.filter(order=>order.status==="Arrived at Admin");
-
     const completed=data.filter(order=>order.status==="Completed");
+
+    document.getElementById("completedOrders").textContent=completed.length;
 
     const recent=document.getElementById("recentOrders");
 
@@ -55,5 +63,11 @@ fetch("orders.json")
         `;
 
     });
+
+})
+
+.catch(error=>{
+
+    console.error(error);
 
 });
