@@ -22,29 +22,64 @@
   },
   {
     "username": "@aineesyah",
-    "item": "ohyul pc",
+    "item": "Ohyul pc",
     "tag": "#YXY01",
     "quantity": 1,
     "status": "Secured"
   },
   {
     "username": "@privsarhhh",
-    "item": "ohyul pc",
+    "item": "Ohyul pc",
     "tag": "#YXY01",
     "quantity": 1,
     "status": "Secured"
   },
   {
     "username": "@iimnrl",
-    "item": "ryul pc",
+    "item": "Ryul pc",
     "tag": "#YXY01",
     "quantity": 1,
     "status": "Secured"
   },
   {
     "username": "@deenalixx",
-    "item": "woojin pc",
+    "item": "Woojin pc",
     "tag": "#YXY01",
+    "quantity": 1,
+    "status": "Secured"
+  },
+  {
+    "username": "@deenalixx",
+    "item": "Woojin pc",
+    "tag": "#YXY02",
+    "quantity": 1,
+    "status": "Secured"
+  },
+  {
+    "username": "@suhaazahar",
+    "item": "Ohyul pc",
+    "tag": "#YXY02",
+    "quantity": 1,
+    "status": "Secured"
+  },
+  {
+    "username": "@dyearestl",
+    "item": "Ryul pc",
+    "tag": "#YXY02",
+    "quantity": 1,
+    "status": "Secured"
+  },
+  {
+    "username": "@prkjngseongg",
+    "item": "Ryul pc",
+    "tag": "#YXY02",
+    "quantity": 1,
+    "status": "Secured"
+  },
+  {
+    "username": "@jjkchi",
+    "item": "Ryul pc",
+    "tag": "#YXY02",
     "quantity": 1,
     "status": "Secured"
   }
